@@ -16,8 +16,8 @@ const Home: FC = () => {
                 <h1>Výuka lépe a zábavně</h1>
                 <span>Chcete svým žákům dopřát kvalitnější výuku, která je bude i bavit?</span>
 
-                <button>Číst dál</button>
-                <button>Do e-shopu</button>
+                <button className="primary-button">Číst dál</button>
+                <button className="secondary-button">Do e-shopu</button>
             </section>
 
             {/* Main content */}
@@ -35,7 +35,7 @@ const Home: FC = () => {
             </ImageAndText>
             <ImageAndText heading="Jak teda na to?">
                 <b>Hru pro vaší školu můžete na pár kliknutí koupit.</b> Všechny naše produkty mají doživotní licence, takže si hru pořídíte jednou a můžete ji už navždy používat. Proč zrovna my? Jsem skupina nadšených studentů z alternativní školy a víme co žáky baví. Již několik let se zajímáme o výrobu her a z vlastní zkušenosti víme jaké metody učení fungují a jaké ne.
-                <button>Do e-shopu</button>
+                <button className="primary-button">Do e-shopu</button>
             </ImageAndText>
 
             {/* Footer */}

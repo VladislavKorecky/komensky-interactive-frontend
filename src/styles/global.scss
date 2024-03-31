@@ -1,0 +1,45 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button {
+    // DISPLAY
+    display: block;
+
+    // FONT
+    font-size: 1rem;
+    font-weight: 600;
+
+    // PADDING
+    padding: 1rem 2rem;
+    
+    // BORDER
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.primary-button {
+    @extend .button;
+
+    color: white;
+    background-color: orange;
+}
+
+.secondary-button {
+    @extend .button;
+
+    // COLOR
+    color: orange;
+    background-color: white;
+
+    // BORDER
+    outline: 4px solid orange;
+    outline-offset: -4px;
+}
