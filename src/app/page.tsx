@@ -1,14 +1,15 @@
 import ImageAndText from "@/components/ImageAndText";
 import Link from "next/link";
 import { FC } from "react";
+import styles from "@/styles/Home.module.scss"
 
 const Home: FC = () => {
     return (
         <>
-            <nav>
+            <nav className={styles.nav}>
                 {/* TODO: Logo */}
                 <span>[Logo here]</span>
-                <Link href="/store">E-shop</Link>
+                <Link href="/store" className={styles.navLink}>E-shop</Link>
             </nav>
 
             {/* Hero section */}
