@@ -1,23 +1,36 @@
+@use "config" as *;
+
 * {
+    // LAYOUT
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    
+    // TEXT & FONT
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
 }
 
 .button {
     // DISPLAY
     display: block;
 
+    // SIZE
+    width: 9rem;
+
     // FONT
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 
     // PADDING
-    padding: 1rem 2rem;
+    padding: 1.25rem 0rem;
     
     // BORDER
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     outline: none;
 }
 
@@ -29,17 +42,17 @@
     @extend .button;
 
     color: white;
-    background-color: orange;
+    background-color: $primary-color;
 }
 
 .secondary-button {
     @extend .button;
 
     // COLOR
-    color: orange;
-    background-color: white;
+    color: $primary-color;
+    background-color: transparent;
 
     // BORDER
-    outline: 4px solid orange;
-    outline-offset: -4px;
+    outline: 3px solid $primary-color;
+    outline-offset: -3px;
 }
