@@ -1,0 +1,130 @@
+@use "config" as *;
+
+/* Navigation */
+.nav {
+    // DISPLAY
+    display: flex;
+
+    // POSITION
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    // SIZE
+    width: 100%;
+    height: 4rem;
+
+    // PADDING
+    padding: 0 5%;
+
+    // LAYOUT
+    justify-content: space-between;
+    align-items: center;
+
+    // COLOR
+    background-color: $background-color;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    // DISPLAY
+    display: flex;
+
+    // POSITION
+    position: relative;
+
+    // LAYOUT
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // SIZE
+    width: 100%;
+    min-height: 100vh;
+
+    // PADDING
+    padding: 0 5%;
+
+    // OVERFLOW
+    overflow: hidden;
+}
+
+.hero > h1, .hero > span {
+    color: white;
+}
+
+.hero > h1 {
+    // TEXT & FONT
+    font-size: 2.75rem;
+
+    // MARGIN
+    margin-bottom: 1.3rem;
+}
+
+.hero > span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+// BUTTON CONTAINER
+.hero > div {
+    // DISPLAY
+    display: flex;
+
+    // LAYOUT
+    gap: 1.5rem;
+
+    // MARGIN
+    margin-top: 10vh;
+}
+
+// BACKGROUND VIDEO
+.hero > video {
+    // POSITION
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    // SIZE
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Footer */
+.footer {
+    // DISPLAY
+    display: flex;
+
+    // LAYOUT
+    flex-direction: column;
+    align-items: center;
+
+    // PADDING
+    padding: 10vh 5%;
+
+    // COLOR
+    background-color: #18181b;
+}
+
+.footer > span {
+    // TEXT & FONT
+    font-weight: 300;
+
+    // COLOR
+    color: $background-color;
+}
+
+.footer > span > a {
+    color: #aaaaff;
+}
