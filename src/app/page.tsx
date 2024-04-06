@@ -46,7 +46,7 @@ const Home: FC = () => {
             </ImageAndText>
 
             {/* Footer */}
-            <footer>
+            <footer className={styles.footer}>
                 <span><a href="https://www.iconfinder.com/icons/7900074/books_mortarboard_magnifier_read_cap_school_graduate_graduation_education_degree_icon">This image</a> is attributed to <a href="https://www.iconfinder.com/webalys">Webalys on Iconfinder</a> under the <a href="https://creativecommons.org/licenses/by/2.5/">Creative Commons (Attribution 2.5 Generic)</a>, no changes were made</span>
                 <span><a href="https://www.iconfinder.com/icons/7900068/play_video_learning_online_media_app_idea_books_light_bulb_laptop_education_icon">This image</a> is attributed to <a href="https://www.iconfinder.com/webalys">Webalys on Iconfinder</a> under the <a href="https://creativecommons.org/licenses/by/2.5/">Creative Commons (Attribution 2.5 Generic)</a>, no changes were made</span>
             </footer>

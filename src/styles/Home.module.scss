@@ -100,3 +100,31 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+/* Footer */
+.footer {
+    // DISPLAY
+    display: flex;
+
+    // LAYOUT
+    flex-direction: column;
+    align-items: center;
+
+    // PADDING
+    padding: 10vh 5%;
+
+    // COLOR
+    background-color: #18181b;
+}
+
+.footer > span {
+    // TEXT & FONT
+    font-weight: 300;
+
+    // COLOR
+    color: $background-color;
+}
+
+.footer > span > a {
+    color: #aaaaff;
+}
