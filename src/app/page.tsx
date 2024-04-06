@@ -1,30 +1,23 @@
 import ImageAndText from "@/components/ImageAndText";
 import Link from "next/link";
 import { FC } from "react";
-import styles from "@/styles/Home.module.scss"
 
 const Home: FC = () => {
     return (
         <>
-            <nav className={styles.nav}>
+            <nav>
                 {/* TODO: Logo */}
                 <span>[Logo here]</span>
-                <Link href="/store" className={styles.navLink}>E-shop</Link>
+                <Link href="/store">E-shop</Link>
             </nav>
 
             {/* Hero section */}
-            <section className={styles.hero}>
-                <video autoPlay muted loop>
-                    <source src="/background.mp4" type="video/mp4" />
-                </video>
-
+            <section>
                 <h1>Výuka lépe a zábavně</h1>
                 <span>Chcete svým žákům dopřát kvalitnější výuku, která je bude i bavit?</span>
 
-                <div>
-                    <button className="primary-button">Číst dál</button>
-                    <button className="secondary-button">Do e-shopu</button>
-                </div>
+                <button className="primary-button">Číst dál</button>
+                <button className="secondary-button">Do e-shopu</button>
             </section>
 
             {/* Main content */}

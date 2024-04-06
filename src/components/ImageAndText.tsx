@@ -1,5 +1,4 @@
 import { FC, ReactNode } from "react";
-import styles from "@/styles/ImageAndText.module.scss";
 
 interface ImageAndTextProps {
     heading: string,
@@ -8,10 +7,9 @@ interface ImageAndTextProps {
 
 const ImageAndText: FC<ImageAndTextProps> = ({heading, children}) => {
     return (
-        <section className={styles.container}>
+        <section>
             {/* TODO: Add image */}
-            <div className={styles.image} />
-            <div className={styles.textContainer}>
+            <div>
                 <h2>{heading}</h2>
                 {children}
             </div>
