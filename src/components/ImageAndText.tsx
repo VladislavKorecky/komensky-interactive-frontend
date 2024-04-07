@@ -1,15 +1,18 @@
 import { FC, MutableRefObject, ReactNode } from "react";
 import styles from "@/styles/ImageAndText.module.scss";
+import Image from "@/components/Image";
 
 interface ImageAndTextProps {
     containerRef?: MutableRefObject<HTMLElement | null> 
     heading: string,
+    imagePath: string,
+    imageAlt: string,
     reversed?: boolean,
     children: ReactNode
 }
 
-const ImageAndText: FC<ImageAndTextProps> = ({containerRef, heading, reversed, children}) => {
-    let first = <div className={styles.image} />;
+const ImageAndText: FC<ImageAndTextProps> = ({containerRef, heading, imagePath, imageAlt, reversed, children}) => {
+    let first = <Image src={imagePath} alt={imageAlt} className={styles.image} />;
     let second = (
         <div className={styles.textContainer}>
             <h2>{heading}</h2>
@@ -26,7 +29,6 @@ const ImageAndText: FC<ImageAndTextProps> = ({containerRef, heading, reversed, c
 
     return (
         <section ref={containerRef} className={styles.container}>
-            {/* TODO: Add image */}
             {first}
             {second}
         </section>

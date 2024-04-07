@@ -36,19 +36,19 @@ const Home: FC = () => {
             </section>
 
             {/* Main content */}
-            <ImageAndText containerRef={firstSectionRef} heading="Výuka lépe a zábavně">
+            <ImageAndText containerRef={firstSectionRef} heading="Výuka lépe a zábavně" imagePath="/illustrations/0.svg" imageAlt="ilustrace kluka, který si čte s hromadou knih kolem">
                 Chcete svým žákům dopřát kvalitnější výuku, která je bude i bavit? <b>Skloubit kvalitní znalosti se zábavou je někdy až Herkulovským úkolem.</b> Do lekce dáváte ohromnou dávku času a energie, ale pak to nejde podle představ. To nás někdy vede k závěru, že je to jedno nebo druhé. Co kdyby jste si ale nemuseli vybírat?
                 <br />
                 <br />
                 <b>Řešením jsou edukační hry.</b> Pokud správně navrženy, žáci si užívají přirozenou konkurenci nebo budování a ani neví, že se vlastně něco učí. Hra může např. simulovat reálnou situaci nebo využívat školních konceptů pro dosažení cíle. Hráč se tak až při závěrečném sdílení uvědomuje svých nově získaných znalostí.
             </ImageAndText>
-            <ImageAndText heading="Co můžete zkusit?" reversed={true}>
+            <ImageAndText heading="Co můžete zkusit?" reversed={true} imagePath="/illustrations/1.svg" imageAlt="ilustrace holky, která studuje na svém počítači">
                 <b>Mohli byste si vytvořit vlastní hru. To má ale několik háčků. Kromě časové a materiální náročnosti je tu i potřeba znalostí v herní výrobě.</b> Vytvořit zábavnou, vybalancovanou a do toho znalostmi nabitou hru není jen tak.
                 <br />
                 <br />
                 V nabitém rozvrhu máte sotva čas na samotnou výrobu, natož na učení game designu. Dnešní generace navíc očekává hry digitální. Nad již předešlé požadavky můžete tedy přidat ještě techniku a uvařili jste si pěknou fušku.
             </ImageAndText>
-            <ImageAndText heading="Jak teda na to?">
+            <ImageAndText heading="Jak teda na to?" imagePath="/illustrations/2.svg" imageAlt="ilustrace holky s nákupními taškami">
                 <b>Hru pro vaší školu můžete na pár kliknutí koupit.</b> Všechny naše produkty mají doživotní licence, takže si hru pořídíte jednou a můžete ji už navždy používat. Proč zrovna my? Jsem skupina nadšených studentů z alternativní školy a víme co žáky baví. Již několik let se zajímáme o výrobu her a z vlastní zkušenosti víme jaké metody učení fungují a jaké ne.
                 <Link href="/store" className="primary-button">Do e-shopu</Link>
             </ImageAndText>
