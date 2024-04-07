@@ -42,7 +42,7 @@ const Home: FC = () => {
                 <br />
                 <b>Řešením jsou edukační hry.</b> Pokud správně navrženy, žáci si užívají přirozenou konkurenci nebo budování a ani neví, že se vlastně něco učí. Hra může např. simulovat reálnou situaci nebo využívat školních konceptů pro dosažení cíle. Hráč se tak až při závěrečném sdílení uvědomuje svých nově získaných znalostí.
             </ImageAndText>
-            <ImageAndText heading="Co můžete zkusit?">
+            <ImageAndText heading="Co můžete zkusit?" reversed={true}>
                 <b>Mohli byste si vytvořit vlastní hru. To má ale několik háčků. Kromě časové a materiální náročnosti je tu i potřeba znalostí v herní výrobě.</b> Vytvořit zábavnou, vybalancovanou a do toho znalostmi nabitou hru není jen tak.
                 <br />
                 <br />
