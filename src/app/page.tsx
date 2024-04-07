@@ -1,9 +1,13 @@
+"use client";
+
 import ImageAndText from "@/components/ImageAndText";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useRef } from "react";
 import styles from "@/styles/Home.module.scss"
 
 const Home: FC = () => {
+    const firstSectionRef = useRef<HTMLElement | null>(null);
+
     return (
         <>
             <nav className={styles.nav}>
@@ -22,13 +26,17 @@ const Home: FC = () => {
                 <span>Chcete svým žákům dopřát kvalitnější výuku, která je bude i bavit?</span>
 
                 <div>
-                    <button className="primary-button">Číst dál</button>
-                    <button className="secondary-button">Do e-shopu</button>
+                    <button onClick={() => {
+                        firstSectionRef.current?.scrollIntoView({
+                            behavior: "smooth"
+                        })
+                    }} className="primary-button">Číst dál</button>
+                    <Link href="/store" className="secondary-button">Do e-shopu</Link>
                 </div>
             </section>
 
             {/* Main content */}
-            <ImageAndText heading="Výuka lépe a zábavně">
+            <ImageAndText containerRef={firstSectionRef} heading="Výuka lépe a zábavně">
                 Chcete svým žákům dopřát kvalitnější výuku, která je bude i bavit? <b>Skloubit kvalitní znalosti se zábavou je někdy až Herkulovským úkolem.</b> Do lekce dáváte ohromnou dávku času a energie, ale pak to nejde podle představ. To nás někdy vede k závěru, že je to jedno nebo druhé. Co kdyby jste si ale nemuseli vybírat?
                 <br />
                 <br />
@@ -42,7 +50,7 @@ const Home: FC = () => {
             </ImageAndText>
             <ImageAndText heading="Jak teda na to?">
                 <b>Hru pro vaší školu můžete na pár kliknutí koupit.</b> Všechny naše produkty mají doživotní licence, takže si hru pořídíte jednou a můžete ji už navždy používat. Proč zrovna my? Jsem skupina nadšených studentů z alternativní školy a víme co žáky baví. Již několik let se zajímáme o výrobu her a z vlastní zkušenosti víme jaké metody učení fungují a jaké ne.
-                <button className="primary-button">Do e-shopu</button>
+                <Link href="/store" className="primary-button">Do e-shopu</Link>
             </ImageAndText>
 
             {/* Footer */}
