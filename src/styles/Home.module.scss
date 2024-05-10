@@ -60,6 +60,14 @@
 }
 
 .hero > h1, .hero > span {
+    // TEXT & FONT
+    text-align: center;
+
+    @media only screen and (min-width: $mobile-breakpoint) {
+        text-align: left;
+    }
+
+    // COLOR
     color: white;
 }
 
@@ -82,10 +90,17 @@
     display: flex;
 
     // LAYOUT
+    flex-direction: column;
+    margin: 0 auto;
     gap: 1.5rem;
 
+    @media only screen and (min-width: $mobile-breakpoint) {
+        flex-direction: row;
+        margin: 0;
+    }
+
     // MARGIN
-    margin-top: 10vh;
+    margin-top: 10vh !important;
 }
 
 // BACKGROUND VIDEO
