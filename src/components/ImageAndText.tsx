@@ -13,7 +13,7 @@ interface ImageAndTextProps {
 
 const ImageAndText: FC<ImageAndTextProps> = ({containerRef, heading, imagePath, imageAlt, reversed, children}) => {
     return (
-        <section ref={containerRef} className={styles.container}>
+        <section ref={containerRef} className={`${styles.container} ${reversed ? styles.reversed: ""}`}>
             <h2>{heading}</h2>
             <Image src={imagePath} alt={imageAlt} className={styles.image} />
             {children}
