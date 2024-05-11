@@ -1,20 +1,17 @@
 "use client";
 
 import ImageAndText from "@/components/ImageAndText";
-import Link from "next/link";
 import { FC, useRef } from "react";
 import styles from "@/styles/Home.module.scss"
+import Navigation from "@/components/Navigation";
+import Link from "next/link";
 
 const Home: FC = () => {
     const firstSectionRef = useRef<HTMLElement | null>(null);
 
     return (
         <>
-            <nav className={styles.nav}>
-                {/* TODO: Logo */}
-                <span>[Logo here]</span>
-                <Link href="/store" className={styles.navLink}>E-shop</Link>
-            </nav>
+            <Navigation />
 
             {/* Hero section */}
             <section className={styles.hero}>
