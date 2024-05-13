@@ -13,8 +13,11 @@ const GameCard: FC<GameCardProps> = ({imagePath, imageAlt, name, description}) =
     return (
         <div className={styles.container}>
             <Image src={imagePath} alt={imageAlt} className={styles.image} />
-            <h3>{name}</h3>
-            <p>{description}</p>
+
+            <div className={styles.textContainer}>
+                <h3>{name}</h3>
+                <p>{description}</p>
+            </div>
         </div>
     );
 }

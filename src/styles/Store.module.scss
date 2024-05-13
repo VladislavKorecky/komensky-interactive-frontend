@@ -1,0 +1,15 @@
+.container {
+    // DISPLAY
+    display: flex;
+
+    // LAYOUT
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+
+    // MARGIN
+    margin-top: 20vh;
+
+    // PADDING
+    padding: 0 5%;
+}
