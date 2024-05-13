@@ -1,6 +1,7 @@
 import { FC, } from "react";
 import styles from "@/styles/GameCard.module.scss";
 import Image from "@/components/Image";
+import Link from "next/link";
 
 interface GameCardProps {
     imagePath: string,
@@ -17,6 +18,11 @@ const GameCard: FC<GameCardProps> = ({imagePath, imageAlt, name, description}) =
             <div className={styles.textContainer}>
                 <h3>{name}</h3>
                 <p>{description}</p>
+            </div>
+
+            <div className={styles.buttonContainer}>
+                <Link href="/" className={`${styles.buyButton} primary-button`}>Koupit nyní</Link>
+                <Link href="/" className={`${styles.infoButton} secondary-button`}>Zjistit více</Link>
             </div>
         </div>
     );
